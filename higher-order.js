@@ -8,7 +8,7 @@ function applyDiscount(prices, rule) {
     return discounted;
 }
 
-const prices = [15000, 30000, 50000];
+const prices = [20000, 60000, 80000];
 const tenPercentOff = applyDiscount(prices, function(price) {
     return price * 0.9;
 });

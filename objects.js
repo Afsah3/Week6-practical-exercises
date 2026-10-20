@@ -1,8 +1,8 @@
 const book = {
-    title: "The Lion King",
-    author: "Jon Favreau",
-    year: 2019,
-    genres: ["Animation", "Adventure"],
+    title: "More than a crown",
+    author: "Naomie Nishimwe",
+    year: 2024,
+    genres: ["Novel", "Comedy"],
 
     summary() {
         return `${this.title} by ${this.author} (${this.year})`;
@@ -10,7 +10,7 @@ const book = {
 };
 
 book.rating = 4.8;
-book.year = 2022;
+book.year = 2025;
 
 console.log(book.summary());
 

@@ -1,7 +1,7 @@
-const products = [{ name: "Laptop", price: 450000, stock: 7 },
-    { name: "Keyboard", price: 25000, stock: 20 },
-    { name: "Mouse", price: 15000, stock: 35 },
-    { name: "Headphones", price: 60000, stock: 12 }]
+const products = [{ name: "Shoes", price: 18000, stock: 10 },
+    { name: "Bag", price: 25000, stock: 8 },
+    { name: "Sandals", price: 15000, stock: 15 },
+    { name: "Shirt", price: 12000, stock: 20 }]
 
 const cheapProducts = products.filter(product => product.price < 20000).map(product => product.name);
 

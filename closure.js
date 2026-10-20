@@ -21,11 +21,10 @@ function createBankAccount(initial) {
     };
 }
 
-// Example
-const account = createBankAccount(5000);
+const account = createBankAccount(10000);
 
 console.log(account.balance());      
-console.log(account.deposit(2000));  
-console.log(account.withdraw(1000)); 
-console.log(account.withdraw(12000));
+console.log(account.deposit(5000)); 
+console.log(account.withdraw(3000)); 
+console.log(account.withdraw(15000));
 console.log(account.balance());      
