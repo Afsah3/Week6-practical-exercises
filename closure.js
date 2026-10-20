@@ -1,36 +1,31 @@
 function createBankAccount(initial) {
-    let accountBalance = initial;
+    let balance = initial;
 
     return {
         deposit(amount) {
-            if (amount > 0) {
-                accountBalance += amount;
-                console.log("Deposited:", amount);
-            } else {
-                console.log("Invalid deposit amount.");
-            }
+            balance += amount;
+            return balance;
         },
 
         withdraw(amount) {
-            if (amount > accountBalance) {
-                console.log("Insufficient funds.");
-            } else if (amount > 0) {
-                accountBalance -= amount;
-                console.log("Withdrawn:", amount);
-            } else {
-                console.log("Invalid withdrawal amount.");
+            if (amount > balance) {
+                return "Insufficient funds";
             }
+            balance -= amount;
+            return balance;
         },
 
         balance() {
-            return accountBalance;
+            return balance;
         }
     };
 }
 
-const account = createBankAccount(10000);
-account.deposit(5000);
-account.withdraw(3000);
-console.log("Current Balance:", account.balance());
-account.withdraw(20000);
-console.log("Final Balance:", account.balance());
+// Example
+const account = createBankAccount(5000);
+
+console.log(account.balance());      
+console.log(account.deposit(2000));  
+console.log(account.withdraw(1000)); 
+console.log(account.withdraw(12000));
+console.log(account.balance());      

@@ -1,6 +1,6 @@
-let cities = ["Kigali", "Nairobi", "New Delhi", "Denver", "Tokyo"];
+let cities = ["Kigali", "Musanze", "Huye", "Rubavu", "Rusizi"];
 
-cities.push("Seoul");
+cities.push("Rulindo");
 cities.shift();
 
 console.log(cities);
